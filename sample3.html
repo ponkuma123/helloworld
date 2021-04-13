@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>First AngularJS Application</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js" >
+    </script>
+    <style>
+        .Calculater{
+            background-color: wheat;
+            padding: 100px;
+            border-radius: 100px;
+            }
+    </style>
+
+</head>
+<body ng-app="" >
+    <div class="Calculater">
+        <h1>First AngularJS Application</h1>
+        <h3>Enter Numbers to Calculater:</h3> 
+        <h4>First Enter the Number :</h4>
+        <input type="text" ng-model="Num1" />
+        <h4>Second Enter the Number :</h4> 
+        <input type="text" ng-model="Num2" /> 
+        <br>
+        <br>
+        <input type = "checkbox" ng-model = "showHide1"  style="font-weight: bold;">ADD(+)</input>
+        <input type = "checkbox" ng-model = "showHide2"  style="font-weight: bold;">SUB(-)</input>
+        <input type = "checkbox" ng-model = "showHide3"  style="font-weight: bold;">MUL(*)</input>
+        <input type = "checkbox" ng-model = "showHide4"  style="font-weight: bold;">DIV(/)</input>
+        <input type = "checkbox" ng-model = "showHide5"  style="font-weight: bold;">HIGH </input>
+        <input type = "checkbox" ng-model = "showHide6"  style="font-weight: bold;">MOD(%)</input><br>
+        <br>
+
+        <button ng-show="showHide1" ng-click="Num3=Num1+Num2">ADD NUMBER</button> <br>
+        <button ng-show="showHide2" ng-click="Num3=Num1-Num2">SUB NUMBER</button> <br>
+        <button ng-show="showHide3" ng-click="Num3=Num1*Num2">MUL NUMBER</button> <br>
+        <button ng-show="showHide4" ng-click="Num3=Num1/Num2">DIV NUMBER</button> <br>
+        <button ng-show="showHide5" ng-click="Num4=Num2>Num1">HIGH NUMBER</button> <br>
+        <button ng-show="showHide6" ng-click="Num3=Num1%Num2">MOD NUMBER</button> <br>
+        
+        <h1>{{Num3}}</h1>
+        <h1 ng-show="showHide5">Second Number is Higher :{{Num4}}</h1>
+    </div>
+    
+    
+</body>
+</html>

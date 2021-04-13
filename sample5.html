@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+    <meta name="viewport" content="width=device-width" />  
+    <title>Operators in AngularJS</title>  
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+</head>  
+  
+<body>  
+    <div ng-app="" ng-init="myArray=[100,350,200,250,540,5,6]">  
+        <p>The third element in array is : <span style="color:red">{{ myArray[2] }}</span></p>  
+        <hr />  
+        <p>Addition operator :<span style="color:red"> {{ myArray[2] + myArray[2]}}</span></p>  
+        <hr />  
+        <p>Subsraction operator :<span style="color:red"> {{ myArray[4] - myArray[0]}}</span></p>  
+        <hr />  
+        <p>Multiplication operator :<span style="color:red"> {{ myArray[5] * myArray[6]}}</span></p>  
+        <hr />  
+        <p>Division operator :<span style="color:red"> {{ myArray[2] / myArray[0]}}</span></p>  
+        <hr />  
+        <p>Modulus operator :<span style="color:red"> {{ myArray[6] % myArray[5]}}</span></p>  
+        <hr />  
+        <p>Equal to operator :<span style="color:red"> {{ myArray[2]==myArray[2] }}</span></p>  
+        <hr />  
+        <p>Equal value and equal type operator :<span style="color:red"> {{ myArray[2] === myArray[2]}}</span></p>  
+        <hr />  
+        <p>Not Equal to operator :<span style="color:red"> {{ myArray[6] != myArray[5]}}</span></p>  
+        <hr />  
+        <p>Greater than operator : <span style="color:red">{{ myArray[6] > myArray[5]}}</span></p>  
+        <hr />  
+        <p>Less than operator :<span style="color:red"> {{ myArray[6] < myArray[5]}}</span></p>  
+        <hr />  
+        <p>Greater than or equal to operator : <span style="color:red">{{ myArray[6] >= myArray[5]}}</span></p>  
+        <hr />  
+        <p>Less than or equal to operator : <span style="color:red">{{ myArray[6] <= myArray[5]}}</span></p>  
+        <hr />  
+        <p>Ternary operator :<span style="color:red"> {{ (myArray[6] > myArray[5]) ? "6 is greater than 5":"5 is less than 6"}}</span></p>  
+        <hr />  
+        <p> && operator : <span style="color:red">{{ myArray[5] < myArray[6] && myArray[6] > myArray[5]}}</span></p>  
+        <hr />  
+        <p> || operator :<span style="color:red"> {{ myArray[5] === myArray[6] || myArray[6] === myArray[5]}}</span></p>  
+        <hr />  
+        <p> ! operator :<span style="color:red"> {{!( myArray[5] === myArray[6])}}</span></p>  
+    </div>  
+</body>  
+  
+</html>  
